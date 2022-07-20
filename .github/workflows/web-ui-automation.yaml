@@ -153,6 +153,9 @@ jobs:
       with:
         bazel-version: '5.0.0'
 
+    - name: cat for tesrt
+      run : cat prysm_repo/WORKSPACE
+
     - name: Run Bazel
       run: cd prysm_repo && bazel build //validator/web:site_data
 
