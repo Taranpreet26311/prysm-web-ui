@@ -118,7 +118,7 @@ jobs:
         include: "prysm_repo/WORKSPACE" 
 
     - name: Get the previous shasum
-      run: wget https://github.com/Taranpreet26311/prysm-web-ui/releases/download/${{ needs.build_and_release.outputs.old_tag }}/prysm-web-ui.tar.gz.sha256sum
+      run: wget https://github.com/prysmaticlabs/prysm-web-ui/releases/download/${{ needs.build_and_release.outputs.old_tag }}/prysm-web-ui.tar.gz.sha256sum
 
     - name: Get previous release shasum value
       id: previous_shasum
