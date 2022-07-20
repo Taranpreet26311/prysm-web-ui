@@ -122,7 +122,7 @@ jobs:
 
     - name: Get previous release shasum value
       id: previous_shasum
-      run: echo "::set-output name=SHASUM::$(cat prysm-web-ui.tar.gz.sha256sum)" | awk '{print $1}'
+      run: echo "::set-output name=SHASUM::$(cat prysm-web-ui.tar.gz.sha256sum | awk '{print $1}')" 
 
     - name: shasum old
       run :  echo ${{ steps.previous_shasum.outputs.SHASUM }}
