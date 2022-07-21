@@ -94,7 +94,7 @@ jobs:
     - name: Checkout tools repo
       uses: actions/checkout@v3
       with:
-        repository: prysmaticlabs/prysm
+        #repository: prysmaticlabs/prysm
         repository: Taranpreet26311/prysm
         path: prysm_repo
         ref: develop
