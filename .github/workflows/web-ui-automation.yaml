@@ -350,3 +350,4 @@ jobs:
         #reviewers: rauljordan, james-prysm
         token: ${{ secrets.PAToken }}
         branch: prysm-web-ui-${{ steps.current_version.outputs.TAG }}
+        base: develop
