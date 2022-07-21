@@ -101,6 +101,9 @@ jobs:
         path: prysm_repo
         ref: develop
 
+    - name: Git Pull
+      run: cd prysm_repo && git pull
+
     # - name: Get previous tag version
     #   id: previous_version
     #   run: cd prysm_repo && echo "::set-output name=TAG_NAME::$(git describe --abbrev=0 --tags `git rev-list --tags --skip=1  --max-count=1`)"
