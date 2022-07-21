@@ -85,6 +85,7 @@ jobs:
         new_sha: ${{ steps.new_shasum.outputs.SHA }}
         old_tag: ${{ steps.previous_version.outputs.TAG_NAME }}
 
+
 # Job for Prysm WORKSPACE modification and pull request
   prysm_pull_request:
     needs: build_and_release
