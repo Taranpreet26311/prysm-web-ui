@@ -112,7 +112,7 @@ jobs:
       uses: jacobtomlinson/gha-find-replace@v2
       with:
         find: ${{ needs.build_and_release.outputs.old_tag }}
-\        replace: ${{ steps.current_version.outputs.TAG }}
+        replace: ${{ steps.current_version.outputs.TAG }}
         include: "prysm_repo/WORKSPACE" 
 
     - name: Get the previous shasum
