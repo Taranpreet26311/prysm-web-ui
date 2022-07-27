@@ -71,4 +71,3 @@ Then, do
 ```
 
 You should see protos being regenerated under `./src/app/proto`, which will be used as the types in our frontend application.
-
